@@ -42,6 +42,7 @@
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filePath = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -82,6 +83,7 @@
             this.deleteRecordToolStripMenuItem.Name = "deleteRecordToolStripMenuItem";
             this.deleteRecordToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.deleteRecordToolStripMenuItem.Text = "Delete Record";
+            this.deleteRecordToolStripMenuItem.Click += new System.EventHandler(this.deleteRecordToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -127,6 +129,7 @@
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
             this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.сохранитьToolStripMenuItem.Text = "Save";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
             // 
             // dataToolStripMenuItem
             // 
@@ -139,7 +142,7 @@
             // addRecordToolStripMenuItem
             // 
             this.addRecordToolStripMenuItem.Name = "addRecordToolStripMenuItem";
-            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addRecordToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.addRecordToolStripMenuItem.Text = "Add Record";
             this.addRecordToolStripMenuItem.Click += new System.EventHandler(this.addRecordToolStripMenuItem_Click);
             // 
@@ -152,6 +155,10 @@
             this.filePath.Size = new System.Drawing.Size(45, 13);
             this.filePath.TabIndex = 6;
             this.filePath.Text = "FilePath";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "txt";
             // 
             // Form1
             // 
@@ -188,6 +195,7 @@
         private System.Windows.Forms.ToolStripMenuItem addRecordToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteRecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
